@@ -1,0 +1,113 @@
+////////////////////////////////////////////////////////////////////////////////
+// 11th MEU (SOC) Mission Framework
+// Created by S3 Developers
+// Version 2.0
+////////////////////////////////////////////////////////////////////////////////
+
+// Información de la mision
+////////////////////////////////////////////////////////////////////////////////
+
+onLoadName = "Nombre de tu mision";
+
+// El nombre de tu mision que se muestra en la pantalla de carga.
+onLoadMission = "Nombre de tu mision";
+
+// Subtitulo/descripcion que se muestra en la pantalla de carga
+onLoadIntro   = "Mensaje de subtitulo";
+
+// Autor de la mision
+author="Fulanito";
+
+// La imagen que se muestra en la pantalla de carga, debe tener una resolución
+// de 512x256 y estar en formato PAA
+// Como pasar a PAA: <TODO: link a manual PAA>
+loadScreen    = "textures\intro.paa";
+
+// Nombre que aparece en el previo a seleccionar la mision
+overviewText = "Nombre de tu mision";
+overviewPicture = "textures\intro.paa";
+
+// Cabecera de la mision
+////////////////////////////////////////////////////////////////////////////////
+
+// Esta clase indica al motor del juego datos basicos de la mision
+// En principio solo habria que tocar el valor "maxPlayers"
+class Header {
+    // Tipo de la mision,
+    // Tipos en: <https://community.bistudio.com/wiki/Multiplayer_Game_Types>
+    gameType = Coop;
+
+    // Numero minimo de jugadores
+    // Se puede quedar en 1 si no hay ningun limite.
+    minPlayers = 1;
+
+    // Numero maximo de jugadores que permite la mision
+    // hay que configurarlo correctamente, si no dara un error.
+    maxPlayers = 50;
+};
+
+// Respawn
+////////////////////////////////////////////////////////////////////////////////
+// En esta seccion no se debe tocar a no ser que se sepa lo que hace.
+
+// Modo de respawn
+// <https://community.bistudio.com/wiki/Description.ext#respawn>
+respawn = "BASE";
+
+// Tiempo de espera para reaparecer
+respawnDelay = 0;
+
+// Chat
+////////////////////////////////////////////////////////////////////////////////
+
+// Desactivación de canales de Chat:
+// 0 = Global, 1 = Side,2 = Command,3 = Group,4 = Vehicle, 5 = Direct, 6 = System
+disableChannels[] = {0,2,3,4,5};
+
+// Debug/Admin actions
+////////////////////////////////////////////////////////////////////////////////
+
+// esta opción activa para el administrador la consola de desarrollo,
+// Dejar siempre en 1!
+enableDebugConsole = 1;
+
+// Parametros configurables de la mision
+// <https://community.bistudio.com/wiki/Arma_3_Mission_Parameters>
+////////////////////////////////////////////////////////////////////////////////
+class Params {
+
+};
+
+// Funciones de la mision
+// <https://community.bistudio.com/wiki/Functions>
+////////////////////////////////////////////////////////////////////////////////
+class CfgFunctions {
+
+};
+
+// Sonidos
+// <http://ofp.toadlife.net/downloads/tutorials/tutorial_sound/tutorial_sound.html>
+////////////////////////////////////////////////////////////////////////////////
+class CfgSounds {
+    sounds[] = {};
+};
+
+// Insignias de unidad
+////////////////////////////////////////////////////////////////////////////////
+class CfgUnitInsignia {
+    /*
+    class demoInsignia {
+        displayName = "Insignia de demostración";
+        author = "FULANITO";
+        texture = "textures\insignias\demo.paa";
+        textureVehicle = ""; // no implementado en A3
+    };
+    */
+};
+
+
+// NO TOCAR A PARTIR DE ESTA LINEA
+////////////////////////////////////////////////////////////////////////////////
+
+// Desactivamos el saving por que no sirve para internet y da fallos
+saving = 0;
