@@ -43,7 +43,7 @@ class Header {
 
     // Numero maximo de jugadores que permite la mision
     // hay que configurarlo correctamente, si no dara un error.
-    maxPlayers = 50;
+    maxPlayers = 46;
 };
 
 // Respawn

@@ -3,10 +3,12 @@ class Mission
 {
 	addOns[]=
 	{
-		"map_vr"
+		"map_vr",
+		"rhsusf_c_troops"
 	};
 	addOnsAuto[]=
 	{
+		"rhsusf_c_troops",
 		"map_vr"
 	};
 	randomSeed=6141834;
@@ -26,6 +28,774 @@ class Mission
 		minute=37;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=16;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={4004.9944,5,4005.9653};
+					azimut=-177.797;
+					special="NONE";
+					id=0;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_squadleader";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; (group this) setGroupId [""Spartan 1""];";
+					description="Spartan 1 - Lider de sección";
+				};
+				class Item1
+				{
+					position[]={4004.8608,5,4008.2163};
+					azimut=-177.797;
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+					description="Spartan 1 - Sargento de sección";
+				};
+				class Item2
+				{
+					position[]={4001.791,5,4008.166};
+					azimut=-177.797;
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_uav";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+					description="Spartan 1 - Mensajero";
+				};
+				class Item3
+				{
+					position[]={4007.9539,5,4008.2744};
+					azimut=-177.797;
+					special="NONE";
+					id=3;
+					side="WEST";
+					vehicle="rhsusf_navy_marpat_wd_medic";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; this setVariable [""ace_medical_medicClass"", 2];";
+					description="Spartan 1 - Sanitario de la sección";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3998.5508,5,4000.0771};
+					azimut=-356.36099;
+					special="NONE";
+					id=4;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_squadleader";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; (group this) setGroupId [""Spartan 1-1""];";
+					description="Spartan 1-1 - Lider de escuadra";
+					syncId=0;
+					synchronizations[]={1};
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4001.1877,5,4000.1016};
+					azimut=-356.36099;
+					special="NONE";
+					id=5;
+					side="WEST";
+					vehicle="rhsusf_navy_marpat_wd_medic";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; this setVariable [""ace_medical_medicClass"", 1];";
+					description="Spartan 1-1 - Sanitario";
+					syncId=1;
+					synchronizations[]={0};
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3973.9065,5,4005.8232};
+					azimut=-269.82101;
+					special="NONE";
+					id=6;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_helipilot";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					init=" (group this) setGroupId [""Viper 6-1""];";
+					description="Viper 6-1 - Piloto";
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={3996.2173,5,3995.9819};
+					azimut=-356.36099;
+					special="NONE";
+					id=7;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_teamleader";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; (group this) setGroupId [""Spartan 1-1-B""];";
+					description="Spartan 1-1-B - Lider de equipo";
+				};
+				class Item1
+				{
+					position[]={3998.5757,5,3996.0205};
+					azimut=-356.36099;
+					special="NONE";
+					id=8;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_autorifleman_m249";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+					description="Spartan 1-1-B - Fusilero automatico";
+				};
+				class Item2
+				{
+					position[]={4001.1799,5,3996.0205};
+					azimut=-356.36099;
+					special="NONE";
+					id=9;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+					description="Spartan 1-1-B - Asst. fusilero automatico";
+				};
+				class Item3
+				{
+					position[]={4003.7295,5,3996.0479};
+					azimut=-356.36099;
+					special="NONE";
+					id=10;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+					description="Spartan 1-1-B - Fusilero";
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={3996.0256,5,3993.748};
+					azimut=-356.36099;
+					special="NONE";
+					id=11;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_teamleader";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; (group this) setGroupId [""Spartan 1-1-C""];";
+					description="Spartan 1-1-C - Lider de equipo";
+				};
+				class Item1
+				{
+					position[]={3998.384,5,3993.7866};
+					azimut=-356.36099;
+					special="NONE";
+					id=12;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_autorifleman_m249";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+					description="Spartan 1-1-C - Fusilero automatico";
+				};
+				class Item2
+				{
+					position[]={4000.9883,5,3993.7866};
+					azimut=-356.36099;
+					special="NONE";
+					id=13;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+					description="Spartan 1-1-C - Asst. fusilero automatico";
+				};
+				class Item3
+				{
+					position[]={4003.5378,5,3993.814};
+					azimut=-356.36099;
+					special="NONE";
+					id=14;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+					description="Spartan 1-1-C - Fusilero";
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4008.3818,5,4000.0586};
+					azimut=-356.36099;
+					special="NONE";
+					id=15;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_squadleader";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; (group this) setGroupId [""Spartan 1-2""];";
+					description="Spartan 1-2 - Lider de escuadra";
+					syncId=2;
+					synchronizations[]={3};
+				};
+			};
+		};
+		class Item7
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4011.2668,5,4000.0938};
+					azimut=-356.36099;
+					special="NONE";
+					id=16;
+					side="WEST";
+					vehicle="rhsusf_navy_marpat_wd_medic";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; this setVariable [""ace_medical_medicClass"", 1];";
+					description="Spartan 1-2 - Sanitario";
+					syncId=3;
+					synchronizations[]={2};
+				};
+			};
+		};
+		class Item8
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={4005.9377,5,3998.0884};
+					azimut=-356.36099;
+					special="NONE";
+					id=17;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_teamleader";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; (group this) setGroupId [""Spartan 1-2-A""];";
+					description="Spartan 1-2-A - Lider de equipo";
+				};
+				class Item1
+				{
+					position[]={4008.3901,5,3998.0957};
+					azimut=-356.36099;
+					special="NONE";
+					id=18;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_autorifleman_m249";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+					description="Spartan 1-2-A - Fusilero automatico";
+				};
+				class Item2
+				{
+					position[]={4011.2832,5,3998.1553};
+					azimut=-356.36099;
+					special="NONE";
+					id=19;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+					description="Spartan 1-2-A - Asst. fusilero automatico";
+				};
+				class Item3
+				{
+					position[]={4014.0205,5,3998.1406};
+					azimut=-356.36099;
+					special="NONE";
+					id=20;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+					description="Spartan 1-2-A - Fusilero";
+				};
+			};
+		};
+		class Item9
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={4006.0486,5,3996.1157};
+					azimut=-356.36099;
+					special="NONE";
+					id=21;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_teamleader";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; (group this) setGroupId [""Spartan 1-1-B""];";
+					description="Spartan 1-2-B - Lider de equipo";
+				};
+				class Item1
+				{
+					position[]={4008.501,5,3996.123};
+					azimut=-356.36099;
+					special="NONE";
+					id=22;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_autorifleman_m249";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+					description="Spartan 1-2-B - Fusilero automatico";
+				};
+				class Item2
+				{
+					position[]={4011.394,5,3996.1826};
+					azimut=-356.36099;
+					special="NONE";
+					id=23;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+					description="Spartan 1-2-B - Asst. fusilero automatico";
+				};
+				class Item3
+				{
+					position[]={4014.1313,5,3996.168};
+					azimut=-356.36099;
+					special="NONE";
+					id=24;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+					description="Spartan 1-2-B - Fusilero";
+				};
+			};
+		};
+		class Item10
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={4006.1133,5,3993.8281};
+					azimut=-356.36099;
+					special="NONE";
+					id=25;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_teamleader";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; (group this) setGroupId [""Spartan 1-1-C""];";
+					description="Spartan 1-2-C - Lider de equipo";
+				};
+				class Item1
+				{
+					position[]={4008.5657,5,3993.8354};
+					azimut=-356.36099;
+					special="NONE";
+					id=26;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_autorifleman_m249";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+					description="Spartan 1-2-C - Fusilero automatico";
+				};
+				class Item2
+				{
+					position[]={4011.4587,5,3993.895};
+					azimut=-356.36099;
+					special="NONE";
+					id=27;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+					description="Spartan 1-2-C - Asst. fusilero automatico";
+				};
+				class Item3
+				{
+					position[]={4014.196,5,3993.8804};
+					azimut=-356.36099;
+					special="NONE";
+					id=28;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+					description="Spartan 1-2-C - Fusilero";
+				};
+			};
+		};
+		class Item11
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={3996.2656,5,3998.0352};
+					azimut=-356.36099;
+					special="NONE";
+					id=29;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_teamleader";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; (group this) setGroupId [""Spartan 1-1-A""];";
+					description="Spartan 1-1-A - Lider de equipo";
+				};
+				class Item1
+				{
+					position[]={3998.624,5,3998.0737};
+					azimut=-356.36099;
+					special="NONE";
+					id=30;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_autorifleman_m249";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+					description="Spartan 1-1-A - Fusilero automatico";
+				};
+				class Item2
+				{
+					position[]={4001.2283,5,3998.0737};
+					azimut=-356.36099;
+					special="NONE";
+					id=31;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+					description="Spartan 1-1-A - Asst. fusilero automatico";
+				};
+				class Item3
+				{
+					position[]={4003.7778,5,3998.1011};
+					azimut=-356.36099;
+					special="NONE";
+					id=32;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+					description="Spartan 1-1-A - Fusilero";
+				};
+			};
+		};
+		class Item12
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3973.8398,5,4003.5713};
+					azimut=-269.82101;
+					special="NONE";
+					id=33;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_helipilot";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					init=" (group this) setGroupId [""Viper 6-2""];";
+					description="Viper 6-2 - Piloto";
+				};
+			};
+		};
+		class Item13
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3973.7803,5,4001.356};
+					azimut=-269.82101;
+					special="NONE";
+					id=34;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_helipilot";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					init=" (group this) setGroupId [""Viper 6-3""];";
+					description="Viper 6-3 - Piloto";
+				};
+			};
+		};
+		class Item14
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3973.7542,5,3998.8892};
+					azimut=-269.82101;
+					special="NONE";
+					id=35;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_helipilot";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					init=" (group this) setGroupId [""Viper 6-4""];";
+					description="Viper 6-4 - Piloto";
+				};
+			};
+		};
+		class Item15
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=10;
+				class Item0
+				{
+					position[]={3975.6218,5,3982.3608};
+					azimut=-357.11099;
+					special="NONE";
+					id=36;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; ";
+					description="Reserva";
+				};
+				class Item1
+				{
+					position[]={3979.4978,5,3982.3608};
+					azimut=-357.11099;
+					special="NONE";
+					id=37;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; ";
+					description="Reserva";
+				};
+				class Item2
+				{
+					position[]={3982.9282,5,3982.3955};
+					azimut=-357.11099;
+					special="NONE";
+					id=38;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; ";
+					description="Reserva";
+				};
+				class Item3
+				{
+					position[]={3986.804,5,3982.4307};
+					azimut=-357.11099;
+					special="NONE";
+					id=39;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; ";
+					description="Reserva";
+				};
+				class Item4
+				{
+					position[]={3989.8911,5,3982.4995};
+					azimut=-357.11099;
+					special="NONE";
+					id=40;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; ";
+					description="Reserva";
+				};
+				class Item5
+				{
+					position[]={3975.6855,5,3978.3281};
+					azimut=-357.11099;
+					special="NONE";
+					id=41;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; ";
+					description="Reserva";
+				};
+				class Item6
+				{
+					position[]={3979.5615,5,3978.3281};
+					azimut=-357.11099;
+					special="NONE";
+					id=42;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; ";
+					description="Reserva";
+				};
+				class Item7
+				{
+					position[]={3982.9919,5,3978.3628};
+					azimut=-357.11099;
+					special="NONE";
+					id=43;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; ";
+					description="Reserva";
+				};
+				class Item8
+				{
+					position[]={3986.8677,5,3978.3979};
+					azimut=-357.11099;
+					special="NONE";
+					id=44;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; ";
+					description="Reserva";
+				};
+				class Item9
+				{
+					position[]={3989.9548,5,3978.4668};
+					azimut=-357.11099;
+					special="NONE";
+					id=45;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; ";
+					description="Reserva";
+				};
+			};
+		};
 	};
 };
 class Intro
