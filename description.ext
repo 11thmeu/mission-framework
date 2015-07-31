@@ -82,7 +82,9 @@ class Params {
 // <https://community.bistudio.com/wiki/Functions>
 ////////////////////////////////////////////////////////////////////////////////
 class CfgFunctions {
-    #include "core\CfgFunctions.hpp"
+    class MEUF {
+        #include "functions\loadouts\CfgFunctions.hpp"
+    };
 };
 
 // Sonidos
