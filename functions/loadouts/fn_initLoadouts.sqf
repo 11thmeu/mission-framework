@@ -1,3 +1,6 @@
+
+if (isNil "MEUF_Loadouts_queue") exitWith {};
+
 {
     _x params ["_unit", "_loadout"];
 
