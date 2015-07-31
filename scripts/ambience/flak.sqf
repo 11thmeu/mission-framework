@@ -25,9 +25,15 @@
     Example:
         0 = [this, 100, 30] execVM "scripts/ambience/flak.sqf";
 */
+
+// variables privadas
 private ["_randomPos", "_tgt", "_randBurst"];
 
+// parametros
 params ["_unit", "_area", "_timeBetween"];
+
+// Solo lo ejecutamos en el servidor
+if (!isServer) exitWith {};
 
 _unitPos = getPosATL _unit;
 
@@ -38,7 +44,7 @@ _unit disableAI "AUTOTARGET";
 // Bucle hasta que la unidad este muerta, o la variable MEU_AutoFlak sea false
 while {_unit getVariable ['MEU_AutoFlak', true] && alive _unit} do {
 	sleep _timeBetween;
-	_randomPos = [_unitPos, (random 50) + _area, random 360 ] call BIS_fnc_relPos;
+	_randomPos = [_unitPos, (random 50) + _area, random 360] call BIS_fnc_relPos;
 
 	// Creamos un soldado virtual (SOLO OTAN)
 	// Lo ponemos en la posicion aleatora al rededor de la unidad
