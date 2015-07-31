@@ -1,0 +1,3 @@
+// rifleman loadout
+
+_
