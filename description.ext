@@ -16,7 +16,7 @@ onLoadMission = "Nombre de tu mision";
 onLoadIntro   = "Mensaje de subtitulo";
 
 // Autor de la mision
-author="Fulanito";
+author = "Fulanito";
 
 // La imagen que se muestra en la pantalla de carga, debe tener una resolución
 // de 512x256 y estar en formato PAA
@@ -82,7 +82,7 @@ class Params {
 // <https://community.bistudio.com/wiki/Functions>
 ////////////////////////////////////////////////////////////////////////////////
 class CfgFunctions {
-
+    #include "core\CfgFunctions.hpp"
 };
 
 // Sonidos
