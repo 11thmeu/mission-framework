@@ -33,9 +33,3 @@ MEUF_GX_SupportFreq = "220.1";
 // Y la frecuencia adecuada
 // Solo se ejecutara si tenemos el addon cargado, para el futuro :)
 [] execVM "scripts\support\gx-addons-support.sqf";
-
-
-/// debug
-[{
-    hintSilent str diag_fps;
-}, 3, []] call CBA_fnc_addPerFrameHandler;

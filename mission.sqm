@@ -10,7 +10,8 @@ class Mission
 		"meu_equipment",
 		"meu_ammoboxes",
 		"ace_common",
-		"gx_addons"
+		"gx_addons",
+		"mbg_killhouses_a3"
 	};
 	addOnsAuto[]=
 	{
@@ -43,7 +44,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=21;
+		items=23;
 		class Item0
 		{
 			side="WEST";
@@ -916,7 +917,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					syncId=4;
-					synchronizations[]={6};
+					synchronizations[]={8};
 				};
 			};
 		};
@@ -1030,7 +1031,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					syncId=5;
-					synchronizations[]={7};
+					synchronizations[]={9};
 				};
 			};
 		};
@@ -1082,7 +1083,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3915.8562,5,3972.208};
+					position[]={3916.115,5,3982.2241};
 					class args
 					{
 						items=29;
@@ -1270,6 +1271,56 @@ class Mission
 				};
 			};
 		};
+		class Item21
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3998.2996,5,3986.0454};
+					azimut=-356.36099;
+					special="NONE";
+					id=51;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_squadleader";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; (group this) setGroupId [""Sabre 1""]; this setVariable [""ace_medical_medicClass"", 1];";
+					description="Sabre 1 - Tirador";
+					syncId=6;
+					synchronizations[]={7};
+				};
+			};
+		};
+		class Item22
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4000.9365,5,3986.0698};
+					azimut=-356.36099;
+					special="NONE";
+					id=52;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_marksman";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="this disableAI ""MOVE""; this setVariable [""ace_medical_medicClass"", 1];";
+					description="Sabre 1 - Observador";
+					syncId=7;
+					synchronizations[]={6};
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -1277,17 +1328,17 @@ class Mission
 		class Item0
 		{
 			position[]={3946.832,5,4004.2432};
-			id=51;
+			id=53;
 			side="EMPTY";
 			vehicle="Box_MEU_Weapons_USMC";
 			skill=0.60000002;
-			syncId=6;
+			syncId=8;
 			synchronizations[]={4};
 		};
 		class Item1
 		{
 			position[]={3946.8318,5,4001.3389};
-			id=52;
+			id=54;
 			side="EMPTY";
 			vehicle="Box_MEU_Launchers_USMC";
 			skill=0.60000002;
@@ -1295,7 +1346,7 @@ class Mission
 		class Item2
 		{
 			position[]={3946.8069,5,3998.4849};
-			id=53;
+			id=55;
 			side="EMPTY";
 			vehicle="Box_MEU_Radios_USMC";
 			skill=0.60000002;
@@ -1303,7 +1354,7 @@ class Mission
 		class Item3
 		{
 			position[]={3946.7568,5,3995.7056};
-			id=54;
+			id=56;
 			side="EMPTY";
 			vehicle="Box_MEU_Explosives_USMC";
 			skill=0.60000002;
@@ -1311,7 +1362,7 @@ class Mission
 		class Item4
 		{
 			position[]={3946.8821,5,3992.9019};
-			id=55;
+			id=57;
 			side="EMPTY";
 			vehicle="Box_MEU_Items_USMC";
 			skill=0.60000002;
@@ -1319,7 +1370,7 @@ class Mission
 		class Item5
 		{
 			position[]={3946.8574,5,3990.0225};
-			id=56;
+			id=58;
 			side="EMPTY";
 			vehicle="Box_MEU_Medical_USMC";
 			skill=0.60000002;
@@ -1327,11 +1378,11 @@ class Mission
 		class Item6
 		{
 			position[]={3946.7568,5,4006.6719};
-			id=57;
+			id=59;
 			side="EMPTY";
 			vehicle="Box_MEU_Crate";
 			skill=0.60000002;
-			syncId=7;
+			syncId=9;
 			synchronizations[]={5};
 		};
 	};
