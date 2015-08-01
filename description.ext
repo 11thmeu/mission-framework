@@ -115,3 +115,6 @@ class CfgUnitInsignia {
 
 // Desactivamos el saving por que no sirve para internet y da fallos
 saving = 0;
+
+// Desactivamos el uso de la AI en las unidades jugables
+disabledAI = 1;
