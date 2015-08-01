@@ -25,6 +25,8 @@ loadScreen    = "textures\intro.paa";
 
 // Nombre que aparece en el previo a seleccionar la mision
 overviewText = "Nombre de tu mision";
+
+// La misma imagen, pero esta aparece en el overview
 overviewPicture = "textures\intro.paa";
 
 // Cabecera de la mision
