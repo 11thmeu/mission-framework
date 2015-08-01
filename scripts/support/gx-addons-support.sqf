@@ -23,6 +23,7 @@ MEUF_GX_InternalEnableFreq = false;
 // Si, esto es un PFH (PerFrameHandler), es codigo no programado, lo cual mas
 // rapido, se ejecuta cada segundo para que la otra funcion no tenga que ejecutar
 // esto cada 0.001 segundos y no sobrecargue el sistema.
+// <https://dev.withsix.com/docs/cba/files/common/fnc_addPerFrameHandler-sqf.html>
 [{
     // Obtenemos las dos frecuencias de nuestra radio activa, la cual podemos
     // transmitir ahora mismo.
