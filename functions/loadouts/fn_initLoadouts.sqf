@@ -1,4 +1,18 @@
+/*
+	Author: Kavinsky
 
+	Description:
+	Inicializa el modulo de loadouts, solo se debe ejecutar en el init.sqf
+
+	Parameter(s):
+    NONE
+
+	Returns:
+	NOTHING
+
+    Example:
+        [] call MEUF_fnc_initLoadouts;
+*/
 if (isNil "MEUF_Loadouts_queue") exitWith {};
 
 {
